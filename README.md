@@ -1,60 +1,125 @@
-# ToAssessment
+ToAssessment
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+This project was generated using Angular CLI v20.3.6 and developed as part of a technical assessment.
+It demonstrates a modern Angular application using Angular Signals for state management, service-driven architecture, and Angular Material UI components.
 
-## Development server
+🚀 Features Overview
+
+Task (To-Do) management with CRUD operations
+(Create, Update, Delete, View Tasks)
+
+Angular Signals–based state management (Angular 16+)
+
+Service-level state handling and business logic
+
+Angular Material dialogs and form inputs
+
+Unit testing for services using Jasmine & Karma
+
+Mock data used in place of a backend API
+
+🛠 Development Server
 
 To start a local development server, run:
 
-```bash
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Navigate to:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+http://localhost:4200/
 
-```bash
+
+The application will automatically reload when source files are modified.
+
+🧱 Code Scaffolding
+
+Angular CLI provides scaffolding tools to generate application elements.
+
+Example:
+
 ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
+For a full list of schematics:
+
 ng generate --help
-```
 
-## Building
+📦 Building the Project
 
-To build the project run:
+To build the project:
 
-```bash
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+The output will be stored in the dist/ directory.
+Production builds are optimized for performance.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+✅ Running Unit Tests
 
-```bash
+Unit tests are written using Jasmine and executed via Karma.
+
 ng test
-```
 
-## Running end-to-end tests
+Testing Notes
 
-For end-to-end (e2e) testing, run:
+Service-level unit tests are implemented (e.g., TaskModel)
 
-```bash
+Angular Signals allow synchronous, isolated testing without subscriptions
+
+Some tests and refinements are still in progress and may not pass in all cases
+
+🌐 End-to-End Testing
+
+To run end-to-end tests:
+
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+Angular CLI does not include an e2e framework by default. A preferred framework can be configured if required.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📚 Resources & References
 
+The following resources were referenced during development:
+
+Angular Testing Guide – Writing and structuring unit tests
+
+Angular Routing Overview – Route configuration and navigation
+
+Angular Signals Guide – Reactive state management implementation
+
+Angular Material Documentation – Dialogs and form styling
+
+Stack Overflow – “No provider for ActivatedRoute” – Resolving test configuration issues
+
+🤖 AI Assistance
+
+AI tools were used for learning, debugging, and code review support:
+
+OpenAI ChatGPT
+
+Google Gemini
+
+All code was reviewed, adapted, and implemented by the developer.
+
+📝 Notes
+
+The core UI functionality is fully implemented and working.
+
+The application currently uses mock data instead of a backend API.
+
+The project focuses on demonstrating:
+
+Angular Signals for state management
+
+Clean separation of concerns using services
+
+Modern Angular testing practices
+
+Additional refinements and test coverage may be added.
+
+🔗 Additional Resources
+
+For more information on Angular CLI commands and usage:
+
+Angular CLI Overview and Command Reference
