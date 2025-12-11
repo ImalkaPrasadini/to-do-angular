@@ -1,34 +1,46 @@
-## Resources & References
+📚 Resources & References
 
-The following resources were used during the development of this project:
+The following official documentation and community resources were referenced during the development of this project:
 
 Angular Testing Guide
- – For understanding and writing unit tests.
+Used to understand best practices for writing and structuring unit tests.
 
 Angular Routing Overview
- – For route management.
+Referenced for implementing and managing application routes.
 
 Angular Signals Guide
- – For implementing reactive state management with signals.
+Used to implement modern reactive state management using Angular Signals (Angular 16+).
 
-Angular Material Dialog Styling
- – For customizing modal dialogs.
+Angular Material Dialog Documentation
+Referenced for configuring and styling modal dialogs.
 
-StackOverflow: No provider for ActivatedRoute
- – For resolving routing-related testing issues.
+Stack Overflow – “No provider for ActivatedRoute.”
+Consulted to resolve routing-related issues encountered during unit testing.
 
-## AI Assistance
+🤖 AI Assistance
 
-Some code suggestions and debugging guidance were provided by:
+AI tools were used as learning and productivity aids during development:
 
 OpenAI ChatGPT
+Used for code explanations, debugging support, and test strategy guidance.
 
 Google Gemini
+Used for cross-checking concepts and exploring alternative implementations.
 
-## Notes
+All code was written, reviewed, and adapted by the developer.
 
-The core functionality of the to-do app (create, update, delete, and display tasks) is implemented and working at the UI level.
+📝 Notes
 
-Some refinements and unit tests are still pending and may not pass fully.
+Core CRUD functionality (create, update, delete, and list tasks) is fully implemented and functioning at the UI level.
 
-The app uses mock data.
+The application currently uses mock data in place of a backend API.
+
+Some unit tests and refinements are still in progress and may not pass in all scenarios.
+
+This project focuses on demonstrating:
+
+Angular Signals–based state management
+
+Clean service-driven architecture
+
+Modern Angular testing practices
