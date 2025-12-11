@@ -1,0 +1,34 @@
+## Resources & References
+
+The following resources were used during the development of this project:
+
+Angular Testing Guide
+ – For understanding and writing unit tests.
+
+Angular Routing Overview
+ – For route management.
+
+Angular Signals Guide
+ – For implementing reactive state management with signals.
+
+Angular Material Dialog Styling
+ – For customizing modal dialogs.
+
+StackOverflow: No provider for ActivatedRoute
+ – For resolving routing-related testing issues.
+
+## AI Assistance
+
+Some code suggestions and debugging guidance were provided by:
+
+OpenAI ChatGPT
+
+Google Gemini
+
+## Notes
+
+The core functionality of the to-do app (create, update, delete, and display tasks) is implemented and working at the UI level.
+
+Some refinements and unit tests are still pending and may not pass fully.
+
+The app uses mock data.

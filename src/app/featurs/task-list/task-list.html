@@ -1,0 +1,32 @@
+<div class="task-list-container">
+  <h2>Task List Page</h2>
+
+  <mat-form-field appearance="fill" class="search-bar">
+    <mat-label>Search</mat-label>
+    <input matInput [(ngModel)]="searchQuery" placeholder="Search tasks" (input)="onSearch()"/>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="sort-dropdown">
+    <mat-label>Sort by</mat-label>
+    <mat-select [(value)]="sortBy">
+      <mat-option value="title">Title</mat-option>
+      <mat-option value="status">Status</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="task-cards">
+    <mat-card *ngFor="let task of filteredTaskList" class="task-card">
+      <mat-card-header>
+        <mat-card-title>{{ task.title }}</mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+          <mat-chip [ngClass]="getStatusColor(task.status)">
+            {{ task.status }}
+          </mat-chip>
+        <button mat-button (click)="viewTask(task.id)">Details</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <mat-paginator [length]="taskList.length" [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+</div>

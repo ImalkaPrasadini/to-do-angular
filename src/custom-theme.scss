@@ -1,0 +1,31 @@
+@use '@angular/material' as mat;
+
+html {
+  // Define the global theme variables on the html element
+  @include mat.theme((
+    color: (
+      // Note: The Material 3 API typically expects a defined color palette, 
+      // not just a simple color name. Angular Material usually provides 
+      // $indigo-palette, $pink-palette, etc. Assuming `mat.$azure-palette` 
+      // and `mat.$blue-palette` are custom or imported palettes.
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body {
+  // Default the application to a light color theme.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application 
+  // using Angular Material's system-level CSS variables.
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+}

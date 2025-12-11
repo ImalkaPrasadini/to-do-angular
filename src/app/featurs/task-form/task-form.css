@@ -1,0 +1,51 @@
+.task-form-container {
+  width: 420px;
+  margin: auto;
+  padding: 24px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  animation: fadein 0.3s, fadeout 0.3s 2.7s;
+}
+
+/* Types */
+.success {
+  background-color: #4caf50;
+}
+
+.warning {
+  background-color: #ff9800;
+}
+
+.error {
+  background-color: #f44336;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-5px); }
+}
